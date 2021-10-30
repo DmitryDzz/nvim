@@ -27,14 +27,19 @@ sh -c 'curl -fLo $HOME/.config/nvim/autoload/plug.vim --create-dirs https://raw.
 
 4. Install the lastest stable Node.js
 ```
+Linux:
 sudo apt install npm
 sudo npm cache clean -f
 sudo npm install -g n
 sudo n stable
+
+Android (termux):
+pkg install nodejs-lts
+
 -- Restart the terminal --
 ```
 
-4. Install neovim plugins
+5. Install neovim plugins
 ```
 nvim
 :PlugInstall
